@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> 배열 객체 생성 및 메서드 활용 </h1>
+    <script type="text/javascript">
+        var arr = [1, 9, 15, 3, "5"];
+        document.write("기본 배열 : " + arr + "<br>");
+        arr.length;
+        document.write("배열의 길이 : " + arr.length + "<br>");
+        arr.reverse();
+        document.write("reverse 메서드 : " + arr + "<br>");
+        var b = arr.join("/");
+        document.write("join 메서드 : " + b + "<br>");
+        
+        /*arr.sort();
+        document.write("sort()1 배열 : " + arr + "<br>");
+        arr.sort((a,b)=>a-b);
+        document.write("sort()2 배열 : " + arr + "<br>");
+        arr[6] = "100";
+        document.write("기본 배열 : " + arr + "<br>");*/
+        
+        var c = arr.concat(100,200,"93");
+        document.write("concat 메서드 : " + c + "<br>");
+        var d = c.slice(2,6);
+        document.write("slice 메서드 : " + d + "<br>");
+        
+        
+        
+    </script>
+</body>
+</html>
