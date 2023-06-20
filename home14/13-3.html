@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function add(a, b) {
+            return (a + b);
+        }
+
+        function sub(a, b) {
+            return (a - b);
+        }
+
+        function mul(a, b) {
+            return (a * b);
+        }
+
+        function div(a, b) {
+            return (a / b);
+        }
+        var a = parseInt(prompt("숫자를 입력하세요.", ""));
+        var b = prompt("사칙연산자를 입력하세요.", "");
+        var c = parseInt(prompt("숫자를 입력하세요.", ""));
+
+        switch (b) {
+            case "+":
+                result = add(a, c);
+                break;
+            case "-":
+                result = sub(a, c);
+                break;
+            case "*":
+                result = mul(a, c);
+                break;
+            case "/":
+                result = div(a, c);
+                break;
+            default:
+                alert("잘못된 사칙연산자를 입력하셨습니다.");
+        }
+
+        document.write("첫번째 숫자 : " + a + "<br>");
+        document.write("사칙연산자 : " + b + "<br>");
+        document.write("두번째 숫자 : " + c + "<br>");
+        document.write("결과 : " + result + "<br>");
+    </script>
+</body>
+</html>

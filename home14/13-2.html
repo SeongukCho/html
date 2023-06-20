@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>요일명 번역</h1>
+    <table border="1">
+        <script type="text/javascript">
+            var day1 = prompt("요일명을 영어나 한글로 입력하세요.", "");
+            var day2;
+            
+            if (day1 == "월요일"){
+                day2 = "Monday";
+            }
+            else if (day1 == "화요일"){
+                day2 = "Tuesday";
+            }
+            else if (day1 == "수요일"){
+                day2 = "Wednesday";
+            }
+            else if (day1 == "목요일"){
+                day2 = "Thursday";
+            }
+            else if (day1 == "금요일"){
+                day2 = "Friday";
+            }
+            else if (day1 == "토요일"){
+                day2 = "Saturday";
+            }
+            else if (day1 == "일요일"){
+                day2 = "Sunday";
+            }
+            else if (day1 == "Monday"){
+                day2 = "월요일";
+            }
+            else if (day1 == "Tuesday"){
+                day2 = "화요일";
+            }
+            else if (day1 == "Wednesday"){
+                day2 = "수요일";
+            }
+            else if (day1 == "Thursday"){
+                day2 = "목요일";
+            }
+            else if (day1 == "Friday"){
+                day2 = "금요일";
+            }
+            else if (day1 == "Saturday"){
+                day2 = "토요일";
+            }
+            else if (day1 == "Sunday"){
+                day2 = "일요일";
+            }
+            else {
+                alert("잘못된 요일명입니다.");
+            }
+
+            /*switch (day1) {
+                case "월요일":
+                    day2 = "Monday";
+                    break;
+                case "화요일":
+                    day2 = "Tuesday";
+                    break;
+                case "수요일":
+                    day2 = "Wednesday";
+                    break;
+                case "목요일":
+                    day2 = "Thursday";
+                    break;
+                case "금요일":
+                    day2 = "Friday";
+                    break;
+                case "토요일":
+                    day2 = "Saturday";
+                    break;
+                case "일요일":
+                    day2 = "Sunday";
+                    break;
+                case "Monday":
+                    day2 = "월요일";
+                    break;
+                case "Tuesday":
+                    day2 = "화요일";
+                    break;
+                case "Wednesday":
+                    day2 = "수요일";
+                    break;
+                case "Thursday":
+                    day2 = "목요일";
+                    break;
+                case "Friday":
+                    day2 = "금요일";
+                    break;
+                case "Saturday":
+                    day2 = "토요일";
+                    break;
+                case "Sunday":
+                    day2 = "일요일";
+                    break;
+                default:
+                    alert("잘못된 요일을 입력하셨습니다.")
+                    day2 = "";
+            }*/
+            document.write("<tr>");
+            document.write("<td> 요일명 </td>");
+            document.write("<td> 번역된 요일명 </td>");
+            document.write("</tr>");
+            document.write("<tr>");
+            document.write("<td>" + day1 + "</td>");
+            document.write("<td>" + day2 + "</td>");
+            document.write("</tr>");
+        </script>
+    </table>
+
+</body>
+</html>
