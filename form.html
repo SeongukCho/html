@@ -1,43 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
 </head>
+
 <body>
-    <form name="ex" action="http://www.naver.com" method="post">
-        <fieldset>
-            <legend>필수 입력</legend>
-            학년 : <label for="1st">1학년</label>
-            <input type="radio" id="1st" name="grd" value="1">
-            <label for="2nd">2학년</label>
-            <input type="radio" id="2nd" name="grd" value="2">
-            <br>
-            입학일 : <input type="date">
-            <br>
-            이메일 : <input type="email" name="email" autofocus>
-            <br>
-            SNS : <input type="url" value="http://">
-            <br>
-            검색 : <input type="search" placeholder="검색어를 쓰세요">
-            <br>
-            나이 : <input type="number" min="19" max="40" step="1" value="20">
-        </fieldset>
-        <fieldset>
-            <legend>선택 사항</legend>
-            색상 선택 : <input type="color">
-            <br>
-            만족도 : 1<input type="range" min="1" max="5" value="2">5
-            <br>
-            검색 : <input type="text" size="10" list="data">
-            <datalist id="data">
-                <option value="1학년" label="2023년 입학"></option>
-                <option value="2학년" label="2022년 입학"></option>
-                <option value="학위내과정" label="수시"></option>
-            </datalist>
-        </fieldset>
-        <input type="submit" value="전송하기">
-        <input type="reset" value="취소하기">
+    <h3>다양한 입력 폼</h3>
+    <form method="get" action="form_app.js">
+        성명 : <input type="text" name="person" /> <br>
+        성별 : <input type="radio" name="gender" value="male" />남성
+        <input type="radio" name="gender" value="female" />여성<br>
+        직업 : <select name="job" size="1">
+            <option>학생</option>
+            <option>회사원</option>
+            <option>공무원</option>
+            <option>기타</option>
+        </select>
+        <p>
+            구입희망분야(복수선택 가능)<br>
+            - 분야 : <input type="checkbox" name="books" value="computer" />컴퓨터
+            <input type="checkbox" name="books" value="economy" />경제
+            <input type="checkbox" name="books" value="common" />상식<br>
+            비고: <br>
+            <textarea name="comments" cols="40" rows="4"></textarea>
+        </p> <hr>
+        <input type="submit" value="신청"/>
+        <input type="reset" value="취소"/>
     </form>
+
 </body>
+
 </html>
